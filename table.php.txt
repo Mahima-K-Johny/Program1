@@ -1,0 +1,23 @@
+<html>
+<body>
+<form action="table.php" method="post">
+Enter Number:
+<input type="number" name="num" /><br>
+<input type="submit" name="submit" value="submit">
+</form>
+<?php
+if(isset($_POST['submit']))
+{
+$num=$_POST['num'];
+define('lim','10');
+for($i=0;$i<=lim;$i++)
+{
+        $a=$num*$i;
+ echo "$num*$i=$a <br>";
+}
+}
+?>
+
+</form>
+</body>
+</html>
